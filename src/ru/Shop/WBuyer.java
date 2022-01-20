@@ -1,17 +1,17 @@
 package ru.Shop;
 
+
 import ru.Shop.Buyer.Woman;
 
-public class WBuyer<Makfa, mozzarella, makfa> {
+public class WBuyer {
     private String name;
-    final String gender;
+    private String gender;
     private String address1;
     Woman human;
 
     boolean Mozzarella = true;
     boolean Makfa = true;
     boolean Bolognese = false;
-
 
     public WBuyer() {
 
@@ -20,7 +20,6 @@ public class WBuyer<Makfa, mozzarella, makfa> {
         address1 = "address1";
         human = new Woman(27, "пол");
     }
-
 
     public String getName() {
         return name;
@@ -34,16 +33,7 @@ public class WBuyer<Makfa, mozzarella, makfa> {
         return human;
     }
 
-    public void setAddress1(String address1) {
-        this.address1 = address1;
-
-    }
-
-    public String getAddress1() {
-        return address1;
-    }
-
-    public void putInTheBasket(){
+    public void putInTheBasket() {
         System.out.println("Юля положила товар в корзину");
     }
 
@@ -51,17 +41,16 @@ public class WBuyer<Makfa, mozzarella, makfa> {
         System.out.println("Юля купила товар");
     }
 
-    public void getOutOfTheBasket(){
+    public void getOutOfTheBasket() {
         System.out.println("достала товар из корзины");
     }
+
     public void delivery() {
         System.out.println("получить товар дома");
     }
 
-    String makfa= Makfa == true ? "положить макароны в корзину" : "оставить макароны на полке";
-
+    String makfa = Makfa == true ? "положить макароны в корзину" : "оставить макароны на полке";
     String mozzarella = Mozzarella == true ? "положить сыр в корзину" : "оставить сыр на полке";
-
     String bolognese = Bolognese == true ? "положить соус в корзину" : "оставить соус на полке";
 
     public void makfa() {

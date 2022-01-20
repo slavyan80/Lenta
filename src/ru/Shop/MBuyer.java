@@ -1,8 +1,9 @@
 package ru.Shop;
 
+
 import ru.Shop.Buyer.Man;
 
-public class MBuyer<s, m> {
+public class MBuyer {
 
     private String name;
     final String gender;
@@ -13,14 +14,12 @@ public class MBuyer<s, m> {
     boolean Makfa = true;
     boolean Bolognese = true;
 
-
     public MBuyer() {
 
         name = "name";
         gender = "gender";
         address2 = "address2";
         human = new Man(35, "пол");
-
 
     }
 
@@ -44,27 +43,24 @@ public class MBuyer<s, m> {
         return address2;
     }
 
-
-
-    public void putInTheBasket(){
+    public void putInTheBasket() {
         System.out.println("Коля положил товар в корзину");
-       
-
     }
+
     public void take() {
         System.out.println("Коля купил товар");
     }
+
     public void getOutOfTheBasket() {
         System.out.println("достал товар из корзины");
     }
+
     public void delivery() {
         System.out.println("получить товар дома");
     }
 
-    String makfa= Makfa == true ? "положить макароны в корзину" : "оставить макароны на полке";
-
+    String makfa = Makfa == true ? "положить макароны в корзину" : "оставить макароны на полке";
     String mozzarella = Mozzarella == true ? "положить сыр в корзину" : "оставить сыр на полке";
-
     String bolognese = Bolognese == true ? "положить соус в корзину" : "оставить соус на полке";
 
     public void makfa() {
@@ -82,6 +78,5 @@ public class MBuyer<s, m> {
     public void setAddress2() {
         System.out.println("доставка Коле по адресу г.Самара, ул.Победы 95-55.");
     }
-
 
 }

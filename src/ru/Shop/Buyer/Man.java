@@ -1,5 +1,7 @@
 package ru.Shop.Buyer;
 
+import ru.Shop.MBuyer;
+
 public class Man {
     private int age;
     String gender;
@@ -15,6 +17,10 @@ public class Man {
 
     public String getGender() {
         return gender;
+    }
+    public static void Buyer(MBuyer man) {
+        man.setName("Покупатель: Коля, возрост:" + man.getHuman().getAge() + "лет," + " " + man.getHuman().getGender() + " " + "мужской.");
+        System.out.println(man.getName());
     }
 
 }

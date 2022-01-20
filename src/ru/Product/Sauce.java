@@ -1,4 +1,4 @@
-package ru.Shop;
+package ru.Product;
 
 public class Sauce extends Product {
     private String name;
@@ -23,6 +23,13 @@ public class Sauce extends Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+    public static void soldProduct(Sauce sauce) {
+        sauce.setPrice((float) 96.60);
+        sauce.setName("Bolognese");
+        System.out.println("Соус " + sauce.getName() + " " + "цена " + sauce.getPrice() + "руб.");
+        sauce.setPot(10);
+        System.out.println("на полке" + " " + sauce.getPot() + " " + "банок");
     }
 
 }
