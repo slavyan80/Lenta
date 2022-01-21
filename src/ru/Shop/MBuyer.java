@@ -3,16 +3,12 @@ package ru.Shop;
 
 import ru.Shop.Buyer.Man;
 
-public class MBuyer {
+public class MBuyer implements Take,ProductSelection {
 
     private String name;
-    final String gender;
+    private String gender;
     private String address2;
     Man human;
-
-    boolean Mozzarella = false;
-    boolean Makfa = true;
-    boolean Bolognese = true;
 
     public MBuyer() {
 
@@ -35,29 +31,13 @@ public class MBuyer {
         return human;
     }
 
-    public void setAddress2(String address2) {
-        this.address2 = address2;
-    }
-
-    public String getAddress2() {
-        return address2;
-    }
-
     public void putInTheBasket() {
         System.out.println("Коля положил товар в корзину");
     }
 
-    public void take() {
-        System.out.println("Коля купил товар");
-    }
-
-    public void getOutOfTheBasket() {
-        System.out.println("достал товар из корзины");
-    }
-
-    public void delivery() {
-        System.out.println("получить товар дома");
-    }
+    boolean Mozzarella = false;
+    boolean Makfa = true;
+    boolean Bolognese = true;
 
     String makfa = Makfa == true ? "положить макароны в корзину" : "оставить макароны на полке";
     String mozzarella = Mozzarella == true ? "положить сыр в корзину" : "оставить сыр на полке";
@@ -73,6 +53,14 @@ public class MBuyer {
 
     public void bolognese() {
         System.out.println(bolognese);
+    }
+
+    public void take() {
+        System.out.println("Коля купил товар");
+    }
+
+    public void delivery() {
+        System.out.println("получить товар дома");
     }
 
     public void setAddress2() {

@@ -3,15 +3,12 @@ package ru.Shop;
 
 import ru.Shop.Buyer.Woman;
 
-public class WBuyer {
+public class WBuyer implements Take,ProductSelection {
+
     private String name;
     private String gender;
     private String address1;
     Woman human;
-
-    boolean Mozzarella = true;
-    boolean Makfa = true;
-    boolean Bolognese = false;
 
     public WBuyer() {
 
@@ -37,17 +34,9 @@ public class WBuyer {
         System.out.println("Юля положила товар в корзину");
     }
 
-    public void take() {
-        System.out.println("Юля купила товар");
-    }
-
-    public void getOutOfTheBasket() {
-        System.out.println("достала товар из корзины");
-    }
-
-    public void delivery() {
-        System.out.println("получить товар дома");
-    }
+    boolean Mozzarella = true;
+    boolean Makfa = true;
+    boolean Bolognese = false;
 
     String makfa = Makfa == true ? "положить макароны в корзину" : "оставить макароны на полке";
     String mozzarella = Mozzarella == true ? "положить сыр в корзину" : "оставить сыр на полке";
@@ -63,6 +52,14 @@ public class WBuyer {
 
     public void bolognese() {
         System.out.println(bolognese);
+    }
+
+    public void take() {
+        System.out.println("Юля купила товар");
+    }
+
+    public void delivery() {
+        System.out.println("получить товар дома");
     }
 
     public void setAddress1() {
