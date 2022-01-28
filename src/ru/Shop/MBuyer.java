@@ -3,7 +3,7 @@ package ru.Shop;
 
 import ru.Shop.Buyer.Man;
 
-public class MBuyer implements Take,ProductSelection {
+public class MBuyer implements Take, ProductSelection {
 
     private String name;
     private String gender;
@@ -32,7 +32,7 @@ public class MBuyer implements Take,ProductSelection {
     }
 
     public void putInTheBasket() {
-        System.out.println("Коля положил товар в корзину");
+        System.out.println("Коля выбрал и положил товар в корзину");
     }
 
     boolean Mozzarella = false;

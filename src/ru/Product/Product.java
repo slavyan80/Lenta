@@ -1,9 +1,7 @@
 package ru.Product;
 
-import ru.Shop.MBuyer;
-import ru.Shop.WBuyer;
 
-public class  Product {
+public abstract class  Product {
     private int packaging;
     private long pot;
 

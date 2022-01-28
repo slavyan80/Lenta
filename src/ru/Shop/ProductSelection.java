@@ -8,7 +8,7 @@ import ru.Product.Sauce;
 public interface ProductSelection {
 
 
-    public static void productSelectionWBuyer(WBuyer woman, Pasta pasta, Pasta pasta3, Cheese cheese1) {
+     static void productSelectionWBuyer(WBuyer woman, Pasta pasta, Pasta pasta3, Cheese cheese1) {
         woman.makfa();
         woman.mozzarella();
         woman.bolognese();
@@ -18,7 +18,7 @@ public interface ProductSelection {
     }
 
 
-    public static void productSelectionMBuyer(MBuyer man, Pasta pasta, Pasta pasta1, Sauce sauce1) {
+    static void productSelectionMBuyer(MBuyer man, Pasta pasta, Pasta pasta1, Sauce sauce1) {
         man.makfa();
         man.mozzarella();
         man.bolognese();

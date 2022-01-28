@@ -3,7 +3,7 @@ package ru.Shop.Service;
 import ru.Shop.MBuyer;
 import ru.Shop.WBuyer;
 
-public class Service {
+public abstract class Service {
     private String deliveryMBuyer;
     private String deliveryWBuyer;
 

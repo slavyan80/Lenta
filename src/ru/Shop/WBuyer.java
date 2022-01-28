@@ -31,7 +31,7 @@ public class WBuyer implements Take,ProductSelection {
     }
 
     public void putInTheBasket() {
-        System.out.println("Юля положила товар в корзину");
+        System.out.println("Юля выбрала и положила товар в корзину");
     }
 
     boolean Mozzarella = true;
