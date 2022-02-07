@@ -4,7 +4,7 @@ public class Sauce extends Product {
     private String name;
     private float price;
 
-    public Sauce(long pot) {
+    public Sauce(int pot) {
         super(pot);
     }
 
@@ -23,6 +23,9 @@ public class Sauce extends Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+    public String toString() {
+        return "Bolognese:"+ super.toString();
     }
     public static void soldProduct(Sauce sauce) {
         sauce.setPrice((float) 96.60);

@@ -1,4 +1,4 @@
-package ru.Shop;
+package ru.shop;
 
 public interface Take {
       default void take() {

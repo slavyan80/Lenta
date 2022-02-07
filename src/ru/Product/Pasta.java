@@ -5,9 +5,6 @@ public class Pasta extends Product {
     private float price;
 
 
-    public Pasta(int packaging) {
-        super(packaging);
-    }
 
     public float getPrice() {
         return price;
@@ -24,7 +21,9 @@ public class Pasta extends Product {
     public void setName(String name) {
         this.name = name;
     }
-
+    public String toString() {
+        return "Makfa:"+ super.toString();
+    }
     public static void soldProduct(Pasta pasta) {
         pasta.setPrice((float) 75.00);
         pasta.setName("Makfa");

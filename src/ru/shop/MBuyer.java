@@ -1,7 +1,7 @@
-package ru.Shop;
+package ru.shop;
 
 
-import ru.Shop.Buyer.Man;
+import ru.shop.Buyer.Man;
 
 public class MBuyer implements Take, ProductSelection {
 
@@ -39,9 +39,9 @@ public class MBuyer implements Take, ProductSelection {
     boolean Makfa = true;
     boolean Bolognese = true;
 
-    String makfa = Makfa == true ? "положить макароны в корзину" : "оставить макароны на полке";
-    String mozzarella = Mozzarella == true ? "положить сыр в корзину" : "оставить сыр на полке";
-    String bolognese = Bolognese == true ? "положить соус в корзину" : "оставить соус на полке";
+    String makfa = Makfa  ? "положить макароны в корзину" : "оставить макароны на полке";
+    String mozzarella = Mozzarella  ? "положить сыр в корзину" : "оставить сыр на полке";
+    String bolognese = Bolognese  ? "положить соус в корзину" : "оставить соус на полке";
 
     public void makfa() {
         System.out.println(makfa);

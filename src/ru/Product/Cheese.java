@@ -1,11 +1,16 @@
 package ru.Product;
 
 public class Cheese extends Product {
+
     private String name;
     private float price;
 
     public Cheese(int packaging) {
         super(packaging);
+    }
+
+    public Cheese() {
+        super();
     }
 
     public float getPrice() {
@@ -23,6 +28,12 @@ public class Cheese extends Product {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Mozzarella:"+ super.toString();
+    }
+
     public static void soldProduct(Cheese cheese) {
         cheese.setPrice((float) 243.99);
         cheese.setName("Mozzarella");

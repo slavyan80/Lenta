@@ -1,7 +1,7 @@
-package ru.Shop.Service;
+package ru.shop.service;
 
-import ru.Shop.MBuyer;
-import ru.Shop.WBuyer;
+import ru.shop.MBuyer;
+import ru.shop.WBuyer;
 
 public abstract class Service {
     private String deliveryMBuyer;

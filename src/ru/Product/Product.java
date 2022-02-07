@@ -1,7 +1,7 @@
 package ru.Product;
 
 
-public abstract class  Product {
+public class  Product {
     private int packaging;
     private long pot;
 
@@ -9,7 +9,7 @@ public abstract class  Product {
         this.packaging = packaging;
     }
 
-    public Product(long pot) {
+    public Product() {
         this.pot = pot;
     }
 
@@ -29,7 +29,8 @@ public abstract class  Product {
         this.pot = pot;
     }
 
-}
 
+
+}
 
 

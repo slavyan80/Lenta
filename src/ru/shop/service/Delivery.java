@@ -1,4 +1,4 @@
-package ru.Shop.Service;
+package ru.shop.service;
 
 public class Delivery {
     public Delivery() {

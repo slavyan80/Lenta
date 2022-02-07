@@ -1,6 +1,6 @@
-package ru.Shop.Buyer;
+package ru.shop.Buyer;
 
-import ru.Shop.MBuyer;
+import ru.shop.MBuyer;
 
 public class Man {
     private int age;

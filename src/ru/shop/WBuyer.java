@@ -1,7 +1,7 @@
-package ru.Shop;
+package ru.shop;
 
 
-import ru.Shop.Buyer.Woman;
+import ru.shop.Buyer.Woman;
 
 public class WBuyer implements Take,ProductSelection {
 

@@ -1,10 +1,11 @@
-package ru.Shop;
+package ru.shop;
 
 import ru.Product.Cheese;
 import ru.Product.Pasta;
 import ru.Product.Sauce;
 
 public class CashBox {
+
 
     public CashBox() {
     }

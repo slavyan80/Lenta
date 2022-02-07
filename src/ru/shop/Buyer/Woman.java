@@ -1,6 +1,6 @@
-package ru.Shop.Buyer;
+package ru.shop.Buyer;
 
-import ru.Shop.WBuyer;
+import ru.shop.WBuyer;
 
 public class Woman {
     private int age;
