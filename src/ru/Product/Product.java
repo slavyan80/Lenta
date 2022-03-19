@@ -1,7 +1,7 @@
 package ru.Product;
 
 
-public class  Product {
+public abstract class  Product {
     private int packaging;
     private long pot;
 

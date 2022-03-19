@@ -22,15 +22,12 @@ public abstract class Basket {
         Basket basket = new Basket() {
             @Override
             void addProduct(Product p) {
-
             }
-
             @Override
             Object[] getProducts() {
                 return new Object[0];
             }
         };
-
     }
 
     abstract void addProduct(Product p);

@@ -8,6 +8,7 @@ public class MBuyer implements Take, ProductSelection {
     private String name;
     private String gender;
     private String address2;
+    private String cardNumber;
     Man human;
 
     public MBuyer() {
@@ -17,6 +18,14 @@ public class MBuyer implements Take, ProductSelection {
         address2 = "address2";
         human = new Man(35, "пол");
 
+    }
+
+    public String getCardNumber() {
+        return cardNumber;
+    }
+
+    public void setCardNumber(String cardNumber) {
+        this.cardNumber = cardNumber;
     }
 
     public String getName() {
@@ -39,8 +48,8 @@ public class MBuyer implements Take, ProductSelection {
     boolean Makfa = true;
     boolean Bolognese = true;
 
-    String makfa = Makfa  ? "положить макароны в корзину" : "оставить макароны на полке";
-    String mozzarella = Mozzarella  ? "положить сыр в корзину" : "оставить сыр на полке";
+    String makfa = Makfa  ?"положить макароны в корзину" : "оставить макароны на полке";
+    String mozzarella = Mozzarella  ?"положить сыр в корзину" : "оставить сыр на полке";
     String bolognese = Bolognese  ? "положить соус в корзину" : "оставить соус на полке";
 
     public void makfa() {
@@ -55,12 +64,10 @@ public class MBuyer implements Take, ProductSelection {
         System.out.println(bolognese);
     }
 
-    public void take() {
-        System.out.println("Коля купил товар");
+    public void take() {// ("Коля купил товар");
     }
 
-    public void delivery() {
-        System.out.println("получить товар дома");
+    public void delivery() {// ("получить товар дома");
     }
 
     public void setAddress2() {

@@ -30,6 +30,7 @@ public class WBuyer implements Take,ProductSelection {
         return human;
     }
 
+
     public void putInTheBasket() {
         System.out.println("Юля выбрала и положила товар в корзину");
     }
@@ -54,12 +55,10 @@ public class WBuyer implements Take,ProductSelection {
         System.out.println(bolognese);
     }
 
-    public void take() {
-        System.out.println("Юля купила товар");
+    public void take() {// System.out.println("Юля купила товар");
     }
 
-    public void delivery() {
-        System.out.println("получить товар дома");
+    public void delivery() {//System.out.println("получить товар дома");
     }
 
     public void setAddress1() {
