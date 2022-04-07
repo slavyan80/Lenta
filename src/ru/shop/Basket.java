@@ -21,16 +21,16 @@ public abstract class Basket {
    public static void putInBasket() {
         Basket basket = new Basket() {
             @Override
-            void addProduct(Product p) {
+            protected void addProduct(Product p) {
             }
             @Override
-            Object[] getProducts() {
+            public Object[] getProducts() {
                 return new Object[0];
             }
         };
     }
 
-    abstract void addProduct(Product p);
-    abstract Object[] getProducts();
+    protected abstract void addProduct(Product p);
+    public abstract Object[] getProducts();
 
 }

@@ -18,9 +18,10 @@ public class Man {
     public String getGender() {
         return gender;
     }
-    public static void Buyer(MBuyer man) {
+    public static char[] Buyer(MBuyer man) {
         man.setName("Покупатель: Коля, возрост:" + man.getHuman().getAge() + "лет," + " " + man.getHuman().getGender() + " " + "мужской.");
         System.out.println(man.getName());
+        return new char[0];
     }
 
 }

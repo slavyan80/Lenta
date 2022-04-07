@@ -19,9 +19,12 @@ import java.util.Random;
 //import static ru.shop.ProductSelection.productSelectionMBuyer;
 //import static ru.shop.ProductSelection.productSelectionWBuyer;
 
-public abstract class Shop implements ProductSelection {
+public class Shop implements ProductSelection {
 
     public static void main(String[] args) throws IOException {
+        // java.lang.Thread myCurrentTread = currentThread();
+       // System.out.println(myCurrentTread);
+
         MBuyer man = new MBuyer();
         WBuyer woman = new WBuyer();
         Shelf shelf = new Shelf();
@@ -49,19 +52,28 @@ public abstract class Shop implements ProductSelection {
         Cheese cheese1 = new Cheese(2);
         Cheese.soldProduct(cheese);
         System.out.println("----------------");
+
+        ShopThread purchase1 = new ShopThread("первый поток");
+        purchase1.start();
+        System.out.println("первый поток");
         SearchProductM.searchM();
        // productSelectionMBuyer(man, pasta, pasta1, sauce1);
        // Shelf.productOnTheShelf(shelf, pasta, pasta1, sauce, sauce1);
         man.take();
         PaymentProduct.oplataTovaraMBuyer(cashBox, pasta, pasta1, sauce, sauce1);
         Service.deliveryMBuyer(man, delivery, pickup);
+        System.out.printf("%s finished.\n", purchase1);
         System.out.println("----------------");
+        ShopThread purchase2 = new ShopThread("второй поток");
+        purchase2.start();
+        System.out.println("второй поток");
         SearchProductW.searchW();
         //productSelectionWBuyer(woman, pasta, pasta3, cheese1);
         // Shelf.productOnTheShelf(shelf, pasta, pasta1, pasta3, cheese, cheese1);
         woman.take();
         PaymentProduct.oplataTovaraWBuyer(cashBox, pasta, pasta3, cheese, cheese1);
         Service.deliveryWBuyer(woman, delivery, pickup);
+        System.out.printf("%s finished.\n", purchase2);
         ServiceShop s = new ServiceShop();
         Basket wBasket = new BasketOnSet();
         for (int i = 0; i < 5; i++) {
@@ -73,6 +85,7 @@ public abstract class Shop implements ProductSelection {
         for (int i = 0; i < wBasket.getProducts().length; i++)
             System.out.println("Index: " + i + " Product: " + wBasket.getProducts()[i]);
     }
+
 
     private static Product selectAnyProduct() {
          Random r = new Random();

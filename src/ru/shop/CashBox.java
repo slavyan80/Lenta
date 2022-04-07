@@ -1,8 +1,10 @@
 package ru.shop;
 
-public class CashBox {
+public class CashBox  {
+
 
     public CashBox() {
+
     }
 
     public void takeMoney() {
